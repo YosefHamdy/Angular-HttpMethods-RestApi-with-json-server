@@ -19,4 +19,13 @@ export class DataService<T> {
   getById(id: number): Observable<T> {
     return this.http.get<T>(this.configURL + `/${id}`);
   }
+  post(model: T): Observable<T> {
+    return this.http.post<T>(this.configURL, model);
+  }
+  put(id: number, model: T): Observable<T> {
+    return this.http.put<T>(this.configURL + `/${id}`, model);
+  }
+  delete(id: number): Observable<T> {
+    return this.http.delete<T>(this.configURL + `/${id}`);
+  }
 }

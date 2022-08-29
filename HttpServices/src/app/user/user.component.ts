@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../../../HttpServices/src/app/models/user';
 import { UserService } from '../../../../HttpServices/src/app/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -8,9 +9,17 @@ import { UserService } from '../../../../HttpServices/src/app/services/user.serv
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'fname', 'lname', 'email', 'details'];
+  displayedColumns: string[] = [
+    'id',
+    'fname',
+    'lname',
+    'email',
+    'details',
+    'action',
+  ];
   dataSource: User[] = [];
-  constructor(private userService: UserService) {}
+  id: any;
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {
     // here observer in angular is lazy so we should use subscribe to get data
@@ -19,5 +28,13 @@ export class UserComponent implements OnInit {
 
       console.log(this.dataSource);
     });
+  }
+
+  delete(id: any) {
+    if (confirm('Are you sure to delete this !')) {
+      this.userService.delete(id).subscribe((data: User) => {
+        this.router.navigateByUrl('/home');
+      });
+    }
   }
 }

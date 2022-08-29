@@ -9,6 +9,12 @@ import { HomeComponent } from './home/home.component';
 import { RoutingRoutingModule } from '../../../HttpServices/src/app/routing-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { UserFormComponent } from './user-form/user-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
     UserComponent,
     UserDetailsComponent,
     HomeComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +31,11 @@ import { MatButtonModule } from '@angular/material/button';
     RoutingRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

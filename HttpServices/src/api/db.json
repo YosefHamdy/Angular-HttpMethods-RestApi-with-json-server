@@ -2,14 +2,14 @@
   "users": [
     {
       "id": 1,
-      "fname": "juo",
-      "lname": "hamdy",
+      "fname": "Yosef",
+      "lname": "Hamdy",
       "email": "mmas@hh.com"
     },
     {
       "id": 2,
-      "fname": "jacky",
-      "lname": "jack",
+      "fname": "Jacky",
+      "lname": "Jack",
       "email": "jacky@hh.com"
     },
     {
@@ -23,6 +23,12 @@
       "fname": "shozy",
       "lname": "shose",
       "email": "shosy@hh.com"
+    },
+    {
+      "id": 5,
+      "fname": "mecky",
+      "lname": "mack",
+      "email": "nugget@hh.com"
     }
   ],
   "companies": [
