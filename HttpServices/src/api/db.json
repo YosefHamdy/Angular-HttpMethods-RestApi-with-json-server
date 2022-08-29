@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "juo",
+      "lname": "hamdy",
+      "email": "mmas@hh.com"
+    },
+    {
+      "id": 2,
+      "fname": "jacky",
+      "lname": "jack",
+      "email": "jacky@hh.com"
+    },
+    {
+      "id": 3,
+      "fname": "febby",
+      "lname": "fab",
+      "email": "febby@hh.com"
+    },
+    {
+      "id": 4,
+      "fname": "shozy",
+      "lname": "shose",
+      "email": "shosy@hh.com"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "microsoft"
+    },
+    {
+      "id": 1,
+      "name": "EJ"
+    }
+  ]
+}
